@@ -26,6 +26,7 @@ const LinkThumbnail: FC<Props> = ({ children, onCopy }) => (
                                 -3px -3px 3px #fff inset,
                                  3px  3px 3px #ddd inset,
                                 -3px -3px 3px #ddd;
+                    transition: box-shadow .2s;
                 }
                 button:focus {
                     outline: none;
@@ -51,10 +52,12 @@ const LinkThumbnail: FC<Props> = ({ children, onCopy }) => (
                     box-sizing: border-box;
                     user-select: text;
                     overflow: hidden;
+                    background-color: none;
                     box-shadow:  2px  2px 3px #ddd,
                                 -2px -2px 3px #ddd inset,
                                  2px  2px 3px #fff inset,
                                 -2px -2px 3px #fff;
+                    transition: box-shadow .2s;
                 }
             `}</style>
         </button>
