@@ -15,7 +15,11 @@ const Index: FC = () => {
 
     useEffect(() => {
         if (url && password) {
-            setEncURL(`${location.origin}/l#${encrypt(url, password)}`);
+            let u = url;
+            if (!url.match(/^https?:\/\//)) {
+                u = 'http://' + u;
+            }
+            setEncURL(`${location.origin}/l#${encrypt(u, password)}`);
         } else {
             setEncURL('');
         }
