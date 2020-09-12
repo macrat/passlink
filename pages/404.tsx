@@ -26,6 +26,25 @@ const NotFound: FC = () => (
                 color: #aaa;
                 margin: 0 0 16px;
             }
+            @media screen and (max-width: 580px) {
+                h1 {
+                    font-size: 800%;
+                    margin: -28px 32px;
+                }
+                span {
+                    font-size: 150%;
+                }
+            }
+            @media screen and (max-width: 380px) {
+                h1 {
+                    font-size: 600%;
+                    margin: -16px 32px -20px;
+                }
+                span {
+                    font-size: 150%;
+                    margin: 0 0 10px;
+                }
+            }
         `}</style>
     </div>
 );

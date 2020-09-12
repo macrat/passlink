@@ -32,6 +32,8 @@ const LinkButton = forwardRef<HTMLAnchorElement, Props>(({ children, href }, ref
                         -1px -1px 5px #ddd,
                          1px  1px 5px #ddd inset;
 
+            transition: box-shadow .2s;
+
             .enabled {
                 box-shadow:  2px  2px 3px #ddd,
                             -2px -2px 3px #ddd inset,

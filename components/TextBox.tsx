@@ -32,6 +32,7 @@ const TextBox: FC<Props> = ({ placeholder, value, onChange, isPassword=false, au
                         -2px -2px 4px #fff inset,
                         -2px -2px 4px #ddd,
                          2px  2px 4px #ddd inset;
+            transition: box-shadow .2s;
 
             :active, :focus {
                 outline: none;
